@@ -1,23 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título do site</title>
+    <title>GestãoPro - Dashboard Financeiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+
+    <aside class="sidebar">
+        <h2>GestãoPro</h2>
+        <ul>
+            <li class="ativo">📊 Visão Geral</li>
+            <li>💰 Lançamentos</li>
+            <li>📈 Relatórios</li>
+            <li>⚙️ Configurações</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
         <header>
-            <h1>Título do Site</h1>
+            <h1>Painel Financeiro</h1>
+            <div class="user-profile">👤 Olá, Administrador</div>
         </header>
-        <article>
-            <h2>Aritgo 001</h2>
-            <p>Texto do Artigo</p>
-        </article>
-        <article>
-            <h2>Aritgo 002</h2>
-            <p>Texto Artigo 002</p>
-        </article>
+
+        <section class="cards-container">
+            <div class="card">
+                <h3>Saldo em Conta</h3>
+                <div class="value">R$ 12.450,00</div>
+            </div>
+            <div class="card receita">
+                <h3>Receitas (Mês)</h3>
+                <div class="value positivo">+ R$ 8.200,00</div>
+            </div>
+            <div class="card despesa">
+                <h3>Despesas (Mês)</h3>
+                <div class="value negativo">- R$ 3.150,00</div>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <h2>Transações Recentes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>28/03/2026</td>
+                        <td>Venda de Consultoria</td>
+                        <td>Serviços</td>
+                        <td class="positivo">R$ 2.500,00</td>
+                        <td><span class="status pago">Recebido</span></td>
+                    </tr>
+                    <tr>
+                        <td>27/03/2026</td>
+                        <td>Compra de Equipamentos</td>
+                        <td>Infraestrutura</td>
+                        <td class="negativo">R$ 1.200,00</td>
+                        <td><span class="status pendente">Pendente</span></td>
+                    </tr>
+                    <tr>
+                        <td>25/03/2026</td>
+                        <td>Mensalidade Internet</td>
+                        <td>Despesas Fixas</td>
+                        <td class="negativo">R$ 150,00</td>
+                        <td><span class="status pago">Pago</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
+
 </body>
 </html>
